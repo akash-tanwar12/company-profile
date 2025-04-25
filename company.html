@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Tanwar | Job Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #e8f0fe, #ffffff);
+            color: #2c3e50;
+        }
+
+        header {
+            background: #0d47a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #0d47a1;
+        }
+
+        .projects, .skills, .jobs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .resume-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 30px;
+            background: #1976d2;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background: #0d47a1;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background: #1976d2;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #0d47a1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Akash Tanwar – Job Portal</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#jobs">Job Openings</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto; font-size: 1.1em;">
+            I am Akash Tanwar, a final-year BTech student at Nitte Meenakshi Institute of Technology (NMIT), passionate about tech, design, and innovation. This portal serves as a bridge between my work and the job world — where opportunities and ideas meet.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Music Response System</h3>
+                <p>Visualizes audio frequencies dynamically using JavaScript and Web Audio API.</p>
+            </div>
+            <div class="card">
+                <h3>Image Enhancer with GANs</h3>
+                <p>Improves blurred vehicle images for license plate recognition using AI.</p>
+            </div>
+            <div class="card">
+                <h3>Web Dashboard Project</h3>
+                <p>Responsive web application built during internship at CodeClause.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">Python</div>
+            <div class="card">HTML & CSS</div>
+            <div class="card">DBMS</div>
+            <div class="card">Web Development</div>
+            <div class="card">Event Management</div>
+            <div class="card">Leadership</div>
+        </div>
+    </section>
+
+    <section id="jobs">
+        <h2>Job Opportunities</h2>
+        <div class="jobs">
+            <div class="card">
+                <h3>Frontend Intern</h3>
+                <p>Looking for frontend opportunities using HTML, CSS, JavaScript. Remote/Hybrid. Available immediately.</p>
+            </div>
+            <div class="card">
+                <h3>Backend Intern</h3>
+                <p>Ready to work on Python/Django backend projects. Open for internship or collaboration offers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" style="max-width: 500px; margin: auto;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section>
+        <a href="https://drive.google.com/file/d/1AgcK_D3rriKxaO691HQlALFrFY1XTkJK/view" target="_blank" class="resume-btn">View My Resume</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Akash Tanwar | NMIT. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
